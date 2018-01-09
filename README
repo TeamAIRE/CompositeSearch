@@ -1,0 +1,49 @@
+###################################################
+#                                                 #
+#    HOW TO INSTALL IGRAPH AND COMPOSITESEARCH    #
+#                                                 #
+###################################################
+
+
+Before installing libxml and igraph please check that 
+you have the compiler g++ >= 4.8
+
+
+1) Install libxml (dependencie for igraph)
+
+
+	sudo apt-get install libxml2-dev libxslt1-dev python-dev
+
+
+2) Install igraph
+
+
+	wget http://igraph.org/nightly/get/c/igraph-0.7.1.tar.gz
+
+	tar -xvzf igraph-0.7.1.tar.gz
+
+	cd igraph-0.7.1
+
+	./configure
+
+	make
+
+	make check
+
+	sudo make install
+	
+	cd ..
+
+
+3) Compile CompositeSearch
+
+
+	In the current folder type:
+	
+	make
+	if igraph is not installed in /usr/local/ as it should be by default
+	please modify the makefile accordingly by changing environment variables : 
+	
+		 PATH_IGRAPH_LIB and PATH_IGRAPH_INC 
+		 
+4) Before using CompositeSearch please read the tutorial.
