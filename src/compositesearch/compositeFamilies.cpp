@@ -28,7 +28,7 @@
 #include <thread>
 #include <vector>
 #include <iomanip>
-
+#include <math.h>
 using namespace std;
 
 void compositeFamilies( map<unsigned int, list<unsigned long long int> >& familiesToCheck, map<unsigned long long int, geneInfo>& genes, map<unsigned long long int, familyInfo>& geneFamilies, unsigned int l, string timeInfo)

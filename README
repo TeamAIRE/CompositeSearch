@@ -34,6 +34,7 @@ you have the compiler g++ >= 4.8
 	
 	cd ..
 
+	sudo ldconfig
 
 3) Compile CompositeSearch
 
