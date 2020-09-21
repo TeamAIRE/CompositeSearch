@@ -28,7 +28,7 @@
 #include <thread>
 #include <vector>
 #include <iomanip>
-
+#include <math.h>
 using namespace std;
 
 void composites( map<unsigned int, list<unsigned long long int> >& refSubNodes, map<unsigned long long int, geneInfo >& genes, map<pair<unsigned long long int, unsigned long long int>, edgeValues>& edges, map<unsigned long long int, familyInfo >& geneFamilies, unsigned short int MAX_OVERLAP, unsigned short int minCov, unsigned int compositeFamMinSize, unsigned int componentFamMinSize, unsigned int l, string timeInfo)
